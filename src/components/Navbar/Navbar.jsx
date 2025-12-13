@@ -1,0 +1,64 @@
+import React from "react";
+
+const Navbar = () => {
+  return (
+    <div>
+      <nav className="flex items-center justify-between px-6 sm:px-10 lg:px-35 py-6 sm:py-7">
+        <div className="nav-left flex items-center gap-2">
+          <svg
+            className=""
+            width="70"
+            height="70"
+            viewBox="0 0 70 70"
+            fill="none"
+            class="h-5 w-5 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M65.5869 52.0195C59.6064 62.7446 48.1517 70 35 70C28.4081 70 22.2428 68.1761 16.9785 65.0078C24.0411 65.0505 30.5152 64.4499 36.8809 63.0947C46.275 61.0948 55.321 57.476 65.5869 52.0195Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M69.9023 37.6084C69.7246 40.0209 69.3033 42.3653 68.6611 44.6172C56.2627 51.6688 46.1988 55.9988 35.8398 58.2041C27.9699 59.8795 19.8406 60.3467 10.2822 59.7793C8.48159 57.9831 6.87607 55.9917 5.49902 53.8398C17.5379 55.0275 27.6247 54.6653 37.4609 52.3047C48.0044 49.7743 58.1043 44.9844 69.9023 37.6084Z"
+              fill="currentColor"
+            ></path>
+            <path
+              d="M35 0C53.225 0 68.1937 13.9301 69.8457 31.7236C57.1262 39.9078 46.8552 44.9089 36.2949 47.4434C26.3045 49.841 15.895 50.0686 2.70117 48.5059C0.961337 44.35 0 39.7873 0 35C0 15.67 15.67 0 35 0Z"
+              fill="currentColor"
+            ></path>
+          </svg>{" "}
+          <h2 className="logo text-lg sm:text-xl md:text-2xl lg:text-xl font-bold ">
+            IconicUI
+          </h2>
+        </div>
+
+        <ul className="flex gap-4 sm:gap-6 lg:gap-5">
+          <li>
+            <a
+              href="https://github.com/vatsal-panchal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl sm:text-2xl hover:scale-110 transition-transform"
+            >
+              <i className="ri-github-fill"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/Codewithvatsal"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl sm:text-2xl hover:scale-110 transition-transform"
+            >
+              <i className="ri-twitter-x-fill"></i>
+            
+              
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;
