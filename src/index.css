@@ -4,10 +4,15 @@
 * {
   /* font-family: "Cormorant Garamond"; */
   font-family: "Poppins", sans-serif;
+  
 }
 
-::selection{
+::selection {
   color: rgb(169, 104, 14);
+}
+
+.hero {
+  font-family: "Cormorant Garamond";
 }
 
 
