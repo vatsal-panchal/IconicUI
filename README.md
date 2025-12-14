@@ -1,16 +1,53 @@
-# React + Vite
+<img width="1919" height="848" alt="image" src="https://github.com/user-attachments/assets/cab9daa8-b35b-4618-a3bd-ed9b6a0142f9" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1b731688-9451-4f35-8bd0-21bac0fac372" />
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🌊 IconWave
 
-## React Compiler
+**IconWave** is a modern, open-source icon library built for developers and designers who want **clean, consistent, and scalable icons** — without signup, without hassle, completely free.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Live Demo: https://iconui.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **500+ Beautifully Designed Icons**
+- **Ready-to-use SVG icons**
+- **Pixel-perfect & scalable**
+- **Dark UI friendly**
+- **Fast icon search**
+- **No signup, no watermark, totally free**
+- **Perfect for web apps, dashboards & UI kits**
+
+---
+
+## 📸 Preview
+
+> Clean dark UI with smooth gradients and minimal design  
+> Browse icons, search instantly, and copy with ease.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React / Vite  
+- **Styling:** Tailwind CSS  
+- **Icons Format:** SVG  
+- **Deployment:** Netlify  
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository and run the project locally:
+
+```bash
+git clone https://github.com/your-username/iconwave.git
+cd iconwave
+npm i
+npm run dev
+
+
+
