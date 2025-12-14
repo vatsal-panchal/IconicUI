@@ -35,13 +35,16 @@
 - **Styling:** Tailwind CSS  
 - **Icons Format:** SVG  
 - **Deployment:** Netlify
-
-  1️⃣ Clone the Repository
+# 1️⃣ Clone the repository
 git clone https://github.com/your-username/iconwave.git
+
+# 2️⃣ Move into project directory
 cd iconwave
 
-2️⃣ Install Dependencies
+# 3️⃣ Install dependencies
 npm install
 
-3️⃣ Start Development Server
+# 4️⃣ Start the development server
 npm run dev
+
+
