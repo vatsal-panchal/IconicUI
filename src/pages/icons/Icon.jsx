@@ -57,7 +57,7 @@ const Icon = () => {
         <div className="mb-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div>
             <h1
-              className={`text-6xl md:text-7xl lg:text-8xl font-bold mb-4 tracking-tight transition-colors ${
+              className={`text-6xl md:text-7xl lg:text-5xl font-bold mb-4 tracking-tight transition-colors ${
                 isDarkMode ? "text-white" : "text-black"
               }`}
             >
@@ -71,122 +71,77 @@ const Icon = () => {
               {iconsData.length}+ meticulously crafted icons
             </p>
           </div>
-
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className={`group flex items-center gap-3 px-5 py-3 rounded-xl transition-all duration-300 ${
-              isDarkMode
-                ? "bg-white/5 hover:bg-white/10 text-neutral-400 hover:text-white border border-white/10 hover:border-white/20"
-                : "bg-black/5 hover:bg-black/10 text-neutral-600 hover:text-black border border-black/10 hover:border-black/20"
-            }`}
-          >
-            <div className="relative w-5 h-5">
-              <svg
-                className={`absolute inset-0 transition-all duration-300 ${
-                  isDarkMode ? "opacity-100 rotate-0" : "opacity-0 rotate-180"
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
-              <svg
-                className={`absolute inset-0 transition-all duration-300 ${
-                  isDarkMode ? "opacity-0 -rotate-180" : "opacity-100 rotate-0"
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                />
-              </svg>
-            </div>
-            <span className="text-sm font-semibold">
-              {isDarkMode ? "Light" : "Dark"}
-            </span>
-          </button>
         </div>
 
         {/* Search & Filter Section */}
-        <div className="mb-10 space-y-6">
-          <div className="flex gap-3">
-            {/* Search Bar */}
+        <div className="mb-8 space-y-4">
+          <div className="flex gap-3 max-w-xl">
+            {/* Compact Search Bar */}
             <div className="relative group flex-1">
-              <div
-                className={`absolute -inset-1 rounded-xl transition-all duration-500 ${
+              <svg
+                className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors duration-300 ${
                   isDarkMode
-                    ? "bg-gradient-to-r from-blue-500/30 via-purple-500/30 to-pink-500/30 opacity-0 group-focus-within:opacity-100 blur-2xl"
-                    : "bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 opacity-0 group-focus-within:opacity-100 blur-2xl"
+                    ? "text-neutral-600 group-focus-within:text-blue-400"
+                    : "text-neutral-400 group-focus-within:text-blue-600"
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search icons..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className={`w-full pl-9 pr-4 py-2 text-sm rounded-lg border transition-all duration-300 ${
+                  isDarkMode
+                    ? "bg-white/5 border-white/10 focus:border-blue-500/50 text-white placeholder-neutral-600 focus:bg-white/10"
+                    : "bg-white border-neutral-200 focus:border-blue-500 text-black placeholder-neutral-400 shadow-sm focus:shadow-md"
+                } focus:outline-none focus:ring-2 ${
+                  isDarkMode ? "focus:ring-blue-500/20" : "focus:ring-blue-500/30"
                 }`}
               />
-              <div className="relative">
-                <svg
-                  className={`absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 transition-all duration-300 ${
+              {searchTerm && (
+                <button
+                  onClick={() => setSearchTerm("")}
+                  className={`absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center rounded-full transition-colors ${
                     isDarkMode
-                      ? "text-neutral-700 group-focus-within:text-blue-400"
-                      : "text-neutral-400 group-focus-within:text-blue-600"
+                      ? "text-neutral-600 hover:text-white hover:bg-white/10"
+                      : "text-neutral-400 hover:text-black hover:bg-black/5"
                   }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-                <input
-                  type="text"
-                  placeholder="Search by name or tag..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className={`relative w-full pl-12 pr-5 py-3.5 text-base rounded-xl border-2 transition-all duration-300 ${
-                    isDarkMode
-                      ? "bg-white/5 border-white/10 focus:border-blue-500/50 text-white placeholder-neutral-600 focus:bg-white/10"
-                      : "bg-white border-neutral-200 focus:border-blue-500/50 text-black placeholder-neutral-400 shadow-sm focus:shadow-lg"
-                  } focus:outline-none`}
-                />
-              </div>
+                  <span className="text-lg leading-none">×</span>
+                </button>
+              )}
             </div>
           </div>
 
           {/* Active Filters */}
           {searchTerm && (
-            <div className="flex items-center gap-3 flex-wrap animate-slide-in">
+            <div className="flex items-center gap-2 animate-slide-in">
               <span
-                className={`text-sm font-semibold ${
+                className={`text-xs font-medium ${
                   isDarkMode ? "text-neutral-600" : "text-neutral-500"
                 }`}
               >
-                Active Filters:
+                Searching:
               </span>
-              <button
-                onClick={() => setSearchTerm("")}
-                className={`group px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2.5 transition-all duration-300 ${
+              <span
+                className={`px-2 py-1 rounded text-xs font-medium ${
                   isDarkMode
-                    ? "bg-white/5 text-neutral-400 hover:bg-white/10 hover:text-white border border-white/10"
-                    : "bg-black/5 text-neutral-700 hover:bg-black/10 hover:text-black border border-black/10"
+                    ? "bg-white/5 text-neutral-400 border border-white/10"
+                    : "bg-black/5 text-neutral-700 border border-black/10"
                 }`}
               >
-                <span className="truncate max-w-[200px]">"{searchTerm}"</span>
-                <span className="text-lg group-hover:rotate-90 transition-transform">
-                  ×
-                </span>
-              </button>
+                {searchTerm}
+              </span>
             </div>
           )}
         </div>
@@ -235,7 +190,7 @@ const Icon = () => {
 
                 {/* Copied State */}
                 {copiedId === icon.id && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center animate-scale-in">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-500 to-gray-900 rounded-xl flex items-center justify-center animate-scale-in">
                     <svg
                       className="w-7 h-7 text-white animate-check"
                       fill="none"
