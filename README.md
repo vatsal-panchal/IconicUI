@@ -7,8 +7,7 @@
 
 **IconWave** is a modern, open-source icon library built for developers and designers who want **clean, consistent, and scalable icons** — without signup, without hassle, completely free.
 
-🚀 Live Demo: https://iconui.netlify.app/
-
+🚀 Live Demo: https://iconic-ui-92vg.vercel.app/
 ---
 
 ## ✨ Features
