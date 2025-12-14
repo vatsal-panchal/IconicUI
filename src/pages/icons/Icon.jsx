@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { iconsData, categories } from "../../data/icons";
+import { iconsData} from "../../data/icons";
 
 const Icon = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -57,7 +57,7 @@ const Icon = () => {
         <div className="mb-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div>
             <h1
-              className={`text-6xl md:text-7xl lg:text-5xl font-bold mb-4 tracking-tight transition-colors ${
+              className={`text-3xl md:text-5xl lg:text-4xl font-bold mb-4 tracking-tight transition-colors ${
                 isDarkMode ? "text-white" : "text-black"
               }`}
             >

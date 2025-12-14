@@ -1100,18 +1100,18 @@ export const iconsData = [
 
 
 
-export const categories = [
-  "All",
-  "ui",
-  "arrows",
-  "social",
-  "files",
-  "communication",
-  "media",
-  "shopping",
-  "weather",
-  "time",
-  "development",
-  "navigation",
-  "devices",
-];
+// export const categories = [
+//   "All",
+//   "ui",
+//   "arrows",
+//   "social",
+//   "files",
+//   "communication",
+//   "media",
+//   "shopping",
+//   "weather",
+//   "time",
+//   "development",
+//   "navigation",
+//   "devices",
+// ];
