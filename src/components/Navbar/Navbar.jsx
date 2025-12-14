@@ -9,11 +9,11 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center gap-2">
               <svg
-                width="28"
-                height="28"
+                width="25"
+                height="25"
                 viewBox="0 0 70 70"
                 fill="none"
-                className="w-5 h-5 sm:w-7 sm:h-7 text-white"
+                className="w-5 h-5 sm:w-7 sm:h-5 text-white"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -29,8 +29,8 @@ const Navbar = () => {
                   fill="currentColor"
                 />
               </svg>
-              <span className="text-base sm:text-lg font-bold text-white tracking-tight">
-                IconHub
+              <span className="text-base sm:text-lg font-semibold text-white tracking-tight">
+                IconWave
               </span>
             </div>
 

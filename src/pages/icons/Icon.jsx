@@ -74,12 +74,12 @@ const Icon = () => {
         </div>
 
         {/* Search & Filter Section */}
-        <div className="mb-8 space-y-4">
-          <div className="flex gap-3 max-w-xl">
+        <div className="mb-8 space-y-4 items-center justify-center flex">
+          <div className="flex gap-3 max-w-xl w-150">
             {/* Compact Search Bar */}
             <div className="relative group flex-1">
               <svg
-                className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 transition-colors duration-300 ${
+                className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-5 transition-colors duration-300 ${
                   isDarkMode
                     ? "text-neutral-600 group-focus-within:text-blue-400"
                     : "text-neutral-400 group-focus-within:text-blue-600"
@@ -100,7 +100,7 @@ const Icon = () => {
                 placeholder="Search icons..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className={`w-full pl-9 pr-4 py-2 text-sm rounded-lg border transition-all duration-300 ${
+                className={`w-full pl-10 - py-4  text-sm rounded-lg border transition-all duration-300 ${
                   isDarkMode
                     ? "bg-white/5 border-white/10 focus:border-blue-500/50 text-white placeholder-neutral-600 focus:bg-white/10"
                     : "bg-white border-neutral-200 focus:border-blue-500 text-black placeholder-neutral-400 shadow-sm focus:shadow-md"
