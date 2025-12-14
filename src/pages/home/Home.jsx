@@ -23,12 +23,12 @@ const Home = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
             <span className="text-xs sm:text-sm text-gray-300">
-              Now with 1000+ icons
+              Now with 500+ icons
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5vw] font-semibold mb-4 sm:mb-5 leading-tight animate-slide-up px-4 ">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[4.5vw] font-semibold mb-4 sm:mb-5 leading-tight animate-slide-up px-4 ">
             <span className="inline-block bg-gradient-to-r from-white via-gray-300 to-gray-800 bg-clip-text text-transparent">
               Build Beautiful UI Faster
             </span>
