@@ -68,7 +68,7 @@ const Icon = () => {
                 isDarkMode ? "text-neutral-500" : "text-neutral-600"
               }`}
             >
-              {iconsData.length}+ meticulously crafted icons
+              {iconsData.length}+ Beautifully designed icons
             </p>
           </div>
         </div>
@@ -157,7 +157,7 @@ const Icon = () => {
 
         {/* Icons Grid */}
         {filteredIcons.length > 0 ? (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2">
             {filteredIcons.map((icon, index) => (
               <button
                 key={icon.id}
