@@ -103,13 +103,13 @@ const Icon = () => {
               Now With {iconsData.length}+ Icons
             </span>
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 leading-tight animate-slide-up">
+          <h1 className="text-3xl md:text-6xl lg:text-7xl font-semibold mb-6 leading-tight animate-slide-up">
             <span className="inline-block bg-gradient-to-r from-white via-gray-300 to-gray-800 bg-clip-text text-transparent">
               Discover Icons
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-400 mb-4 animate-slide-up-delay">
+          <p className="text-[15px] md:text-2xl text-gray-400 mb-4 animate-slide-up-delay">
             Beautiful, Ready-To-Use Icons That Scale Perfectly.
           </p>
           <p className="text-lg text-gray-500 animate-slide-up-delay-2">
