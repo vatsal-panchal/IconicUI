@@ -37,7 +37,7 @@ const Navbar = () => {
             {/* Links */}
             <div className="flex items-center gap-3 sm:gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/vatsal-panchal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </svg>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/Codewithvatsal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"
