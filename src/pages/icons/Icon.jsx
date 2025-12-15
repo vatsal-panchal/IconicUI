@@ -48,7 +48,8 @@ const Icon = () => {
               height: `${Math.random() * 3 + 1}px`,
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              background: i % 3 === 0 ? '#60a5fa' : i % 3 === 1 ? '#a78bfa' : '#ffffff',
+              background:
+                i % 3 === 0 ? "#60a5fa" : i % 3 === 1 ? "#a78bfa" : "#ffffff",
               animationDelay: `${Math.random() * 3}s`,
               animationDuration: `${2 + Math.random() * 3}s`,
               boxShadow: `0 0 ${Math.random() * 10 + 5}px currentColor`,
@@ -80,7 +81,7 @@ const Icon = () => {
 
       {/* Gradient Overlays with Mouse Follow */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black z-0" />
-      <div 
+      <div
         className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow transition-all duration-1000 ease-out pointer-events-none"
         style={{
           top: `${mousePosition.y / 20}px`,
@@ -88,7 +89,10 @@ const Icon = () => {
         }}
       />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slower" />
-      <div className="absolute top-1/3 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div
+        className="absolute top-1/3 right-1/3 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-pulse-slow"
+        style={{ animationDelay: "2s" }}
+      />
 
       {/* Navbar */}
       <Navbar />
@@ -106,13 +110,12 @@ const Icon = () => {
               Now With {iconsData.length}+ Icons
             </span>
           </div>
-          
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-6 leading-tight animate-slide-up">
             <span className="inline-block bg-gradient-to-r from-white via-gray-300 to-gray-800 bg-clip-text text-transparent">
-              Browse Icons
+              Discover Icons
             </span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-400 mb-4 animate-slide-up-delay">
             Beautiful, Ready-To-Use Icons That Scale Perfectly.
           </p>
@@ -150,7 +153,7 @@ const Icon = () => {
                 {searchTerm && (
                   <button
                     onClick={() => setSearchTerm("")}
-                    className="absolute right-5 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full text-gray-500 hover:text-white hover:bg-white/10 transition-colors"
+                    className="absolute right-5 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center rounded-full text-gray-500 transition-colors focus:outline-none"
                   >
                     <span className="text-2xl leading-none">×</span>
                   </button>
@@ -160,7 +163,8 @@ const Icon = () => {
 
             {hasResults && (
               <div className="mt-6 text-sm text-gray-500 font-medium">
-                {filteredIcons.length} {filteredIcons.length === 1 ? "icon" : "icons"} found
+                {filteredIcons.length}{" "}
+                {filteredIcons.length === 1 ? "icon" : "icons"} found
               </div>
             )}
           </div>
@@ -187,9 +191,9 @@ const Icon = () => {
 
                 {/* Copied State */}
                 {copiedId === icon.id && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center animate-pop-in backdrop-blur-sm">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-600 rounded-2xl flex items-center justify-center animate-pop-in backdrop-blur-sm">
                     <svg
-                      className="w-10 h-10 text-white animate-check-draw"
+                      className="w-7 h-7 text-white animate-check-draw"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

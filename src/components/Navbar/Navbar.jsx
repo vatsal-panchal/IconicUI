@@ -29,7 +29,7 @@ const Navbar = () => {
                   fill="currentColor"
                 />
               </svg>
-              <span className="text-base sm:text-lg font-semibold text-white tracking-tight">
+              <span className="text-base sm:text-xl font-semibold  bg-gradient-to-r from-white via-gray-300 to-gray-800 bg-clip-text text-transparent tracking-tight ">
                 IconWave
               </span>
             </div>
