@@ -594,20 +594,6 @@ export const iconsData = [
   },
   // Naye Icons: ID 83 se 100 tak (Total 18 icons)
   {
-    id: 83,
-    name: "tablet",
-    category: "devices",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><line x1="12" x2="12.01" y1="18" y2="18"/></svg>`,
-    tags: ["tablet", "ipad", "device"],
-  },
-  {
-    id: 84,
-    name: "monitor",
-    category: "devices",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="15" x="2" y="3" rx="2"/><path d="M12 18v4"/><path d="M16 18H8"/><path d="M19 18h3"/><path d="M2 18h3"/></svg>`,
-    tags: ["monitor", "screen", "display"],
-  },
-  {
     id: 85,
     name: "mouse",
     category: "devices",
@@ -621,28 +607,6 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M19 16H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2z"/><path d="M17 9H7a4 4 0 0 0-4 4v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2a4 4 0 0 0-4-4z"/></svg>`,
     tags: ["printer", "print", "output"],
   }, // Data & Information
-
-  {
-    id: 87,
-    name: "bar-chart",
-    category: "data",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>`,
-    tags: ["chart", "stats", "analytics"],
-  },
-  {
-    id: 88,
-    name: "pie-chart",
-    category: "data",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>`,
-    tags: ["pie", "chart", "data", "report"],
-  },
-  {
-    id: 89,
-    name: "activity",
-    category: "data",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
-    tags: ["activity", "pulse", "line-chart"],
-  }, // Commerce & Finance
 
   {
     id: 90,
@@ -702,13 +666,7 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>`,
     tags: ["help", "question", "info"],
   },
-  {
-    id: 98,
-    name: "alert-triangle",
-    category: "misc",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>`,
-    tags: ["alert", "warning", "danger"],
-  },
+
   {
     id: 99,
     name: "power",
@@ -744,13 +702,7 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1c-1.33 0-2.58.55-3.5 1.5L10 15 8 13.5l1.5-2.5-3.5-3.5c-1 0-2 1.25-2 2.5v1"/><circle cx="16.5" cy="7.5" r="2.5"/></svg>`,
     tags: ["key", "access", "password", "login"],
   },
-  {
-    id: 104,
-    name: "alert-triangle",
-    category: "security",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h18.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>`,
-    tags: ["alert", "warning", "danger", "error"],
-  },
+
   {
     id: 105,
     name: "zap",
@@ -781,13 +733,7 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19.2 8.8-3.9-3.9a2 2 0 0 0-2.82 0l-10.4 10.4c-1.25 1.25-1.25 3.25 0 4.5l3.9 3.9c1.25 1.25 3.25 1.25 4.5 0l10.4-10.4a2 2 0 0 0 0-2.82z"/><path d="m15 15 4-4"/><path d="M13 17 9 13"/></svg>`,
     tags: ["syringe", "injection", "medicine", "vaccine"],
   },
-  {
-    id: 109,
-    name: "activity",
-    category: "health",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
-    tags: ["activity", "fitness", "pulse", "tracking"],
-  },
+
   {
     id: 110,
     name: "pills",
@@ -870,28 +816,6 @@ export const iconsData = [
     tags: ["globe", "world", "internet", "travel"],
   },
 
-  // Finance & Money (ID 121-125)
-  {
-    id: 121,
-    name: "dollar-sign",
-    category: "finance",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
-    tags: ["dollar", "money", "currency", "usd"],
-  },
-  {
-    id: 122,
-    name: "trending-up",
-    category: "finance",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 17.5 19.5 17 22 2 7 9 2 22 7"/></svg>`,
-    tags: ["trend", "growth", "stock", "up"],
-  },
-  {
-    id: 123,
-    name: "trending-down",
-    category: "finance",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 17 13.5 8.5 17.5 4.5 17 2 2 17 9 22 22 17"/></svg>`,
-    tags: ["trend", "decline", "stock", "down"],
-  },
   {
     id: 124,
     name: "wallet",
@@ -1323,13 +1247,6 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>`,
     tags: ["wrench", "tool", "repair", "fix"],
   },
-  {
-    id: 182,
-    name: "hammer",
-    category: "tools",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9"/></svg>`,
-    tags: ["hammer", "tool", "build", "construct"],
-  },
   // Design & Layout Icons (ID 182 se continue)
   {
     id: 182,
@@ -1345,20 +1262,7 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="12" x2="12" y1="3" y2="21"/></svg>`,
     tags: ["columns", "split", "layout", "divide"],
   },
-  {
-    id: 184,
-    name: "maximize",
-    category: "layout",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>`,
-    tags: ["maximize", "fullscreen", "expand"],
-  },
-  {
-    id: 185,
-    name: "minimize",
-    category: "layout",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 16h-3a2 2 0 0 1-2-2v-3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/></svg>`,
-    tags: ["minimize", "shrink", "collapse"],
-  },
+
   {
     id: 186,
     name: "align-left",
@@ -1380,7 +1284,7 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="3" y1="6" y2="6"/><line x1="21" x2="7" y1="12" y2="12"/><line x1="21" x2="5" y1="18" y2="18"/></svg>`,
     tags: ["align", "text", "right"],
   },
-// Type & Formatting Icons (Continuing from 188)
+  // Type & Formatting Icons (Continuing from 188)
   {
     id: 189,
     name: "bold",
@@ -1466,14 +1370,7 @@ export const iconsData = [
     tags: ["palette", "color", "design", "art"],
   },
 
-  // Health & Misc Icons (ID 201 - 230)
-  {
-    id: 201,
-    name: "activity",
-    category: "health",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
-    tags: ["activity", "pulse", "heartbeat", "health"],
-  },
+
   {
     id: 202,
     name: "thermometer",
@@ -1523,13 +1420,7 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>`,
     tags: ["info", "information", "detail", "about"],
   },
-  {
-    id: 209,
-    name: "alert-triangle",
-    category: "misc",
-    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>`,
-    tags: ["alert", "warning", "error", "triangle"],
-  },
+
   {
     id: 210,
     name: "zap",
@@ -2524,8 +2415,6 @@ export const iconsData = [
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.8 1.2c-.3-.2-.7-.3-1.1-.3H6.3c-.4 0-.8.1-1.1.3L1.2 5.5c-.3.2-.5.5-.5.9v10.4c0 .4.2.7.5.9l4 4.3c.3.2.7.3 1.1.3h11.5c.4 0 .8-.1 1.1-.3l4-4.3c.3-.2.5-.5.5-.9V6.4c0-.4-.2-.7-.5-.9z"/><path d="M12 2.7l-9.3 5M12 2.7l9.3 5"/><path d="M2.7 8.2v7.6"/><path d="M21.3 8.2v7.6"/><path d="M12 21.3v-7.6"/></svg>`,
     tags: ["3d", "box", "structure", "design"],
   },
-  
-
 ];
 
 // export const categories = [

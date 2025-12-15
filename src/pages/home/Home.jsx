@@ -5,13 +5,29 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
+      {/* Animated Stars Background */}
+      <div className="absolute inset-0 overflow-hidden z-0">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white rounded-full animate-twinkle"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${2 + Math.random() * 3}s`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black z-0" />
       <div className="absolute top-0 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow" />
       <div className="absolute bottom-0 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slower" />
 
       {/* Navbar */}
-<Navbar/>
+      <Navbar />
 
       {/* Main Content */}
       <main className="relative z-10">
@@ -44,16 +60,13 @@ const Home = () => {
 
           {/* CTA Button */}
           <div className="flex items-center justify-center animate-slide-up-delay-3 px-4">
-            {/* <a href="/icons"> */}
-            <Link to='/Icons'>
-               <button className="group relative px-5 sm:px-5 py-2.5 sm:py-3 bg-white text-black font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/20 text-sm sm:text-base">
+            <Link to="/Icons">
+              <button className="group relative px-5 sm:px-5 py-2.5 sm:py-3 bg-white text-black font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/20 text-sm sm:text-base">
                 <span className="relative z-10 flex items-center gap-2 cursor-pointer">
-              Explore Icons
+                  Explore Icons
                 </span>
               </button>
             </Link>
-             
-            {/* </a> */}
           </div>
         </section>
       </main>
@@ -103,6 +116,17 @@ const Home = () => {
           }
         }
 
+        @keyframes twinkle {
+          0%, 100% {
+            opacity: 0;
+            transform: scale(0);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
         .animate-fade-in {
           animation: fade-in 0.8s ease-out;
         }
@@ -129,6 +153,10 @@ const Home = () => {
 
         .animate-pulse-slower {
           animation: pulse-slower 10s ease-in-out infinite;
+        }
+
+        .animate-twinkle {
+          animation: twinkle 3s ease-in-out infinite;
         }
       `}</style>
     </div>

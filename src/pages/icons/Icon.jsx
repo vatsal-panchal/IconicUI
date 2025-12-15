@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import { iconsData} from "../../data/icons";
+import { iconsData } from "../../data/icons";
 
 const Icon = () => {
   const [searchTerm, setSearchTerm] = useState("");
-
   const [copiedId, setCopiedId] = useState(null);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
@@ -28,9 +27,7 @@ const Icon = () => {
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  const hasResults = filteredIcons.length > 0;
 
   return (
     <div
@@ -61,7 +58,7 @@ const Icon = () => {
                 isDarkMode ? "text-white" : "text-black"
               }`}
             >
-              Browse Icons
+              Discover Icons
             </h1>
             <p
               className={`text-xl transition-colors ${
@@ -73,90 +70,77 @@ const Icon = () => {
           </div>
         </div>
 
-        {/* Search & Filter Section */}
-        <div className="mb-8 space-y-4 items-center justify-center flex">
-          <div className="flex gap-3 max-w-xl w-150">
-            {/* Compact Search Bar */}
-            <div className="relative group flex-1">
-              <svg
-                className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-5 transition-colors duration-300 ${
-                  isDarkMode
-                    ? "text-neutral-600 group-focus-within:text-blue-400"
-                    : "text-neutral-400 group-focus-within:text-blue-600"
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-              <input
-                type="text"
-                placeholder="Search icons..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className={`w-full pl-10 - py-4  text-sm rounded-lg border transition-all duration-300 ${
-                  isDarkMode
-                    ? "bg-white/5 border-white/10 focus:border-blue-500/50 text-white placeholder-neutral-600 focus:bg-white/10"
-                    : "bg-white border-neutral-200 focus:border-blue-500 text-black placeholder-neutral-400 shadow-sm focus:shadow-md"
-                } focus:outline-none focus:ring-2 ${
-                  isDarkMode ? "focus:ring-blue-500/20" : "focus:ring-blue-500/30"
-                }`}
-              />
-              {searchTerm && (
-                <button
-                  onClick={() => setSearchTerm("")}
-                  className={`absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center rounded-full transition-colors ${
-                    isDarkMode
-                      ? "text-neutral-600 hover:text-white hover:bg-white/10"
-                      : "text-neutral-400 hover:text-black hover:bg-black/5"
-                  }`}
-                >
-                  <span className="text-lg leading-none">×</span>
-                </button>
-              )}
+        {/* Search & Filter Section - Only show when there are results OR when searching */}
+        {(hasResults || searchTerm) && (
+          <>
+            <div className="mb-8 flex items-center justify-center">
+              <div className="flex gap-3 max-w-xl w-full">
+                {/* Compact Search Bar */}
+                <div className="relative group flex-1">
+                  <svg
+                    className={`absolute left-3 top-1/2 -translate-y-1/2 w-4 h-5 transition-colors duration-300 ${
+                      isDarkMode
+                        ? "text-neutral-600 group-focus-within:text-blue-400"
+                        : "text-neutral-400 group-focus-within:text-blue-600"
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Search icons..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className={`w-full pl-10 pr-10 py-4 text-sm rounded-lg border transition-all duration-300 ${
+                      isDarkMode
+                        ? "bg-white/5 border-white/10 focus:border-blue-500/50 text-white placeholder-neutral-600 focus:bg-white/10"
+                        : "bg-white border-neutral-200 focus:border-blue-500 text-black placeholder-neutral-400 shadow-sm focus:shadow-md"
+                    } focus:outline-none focus:ring-2 ${
+                      isDarkMode
+                        ? "focus:ring-blue-500/20"
+                        : "focus:ring-blue-500/30"
+                    }`}
+                  />
+                  {searchTerm && (
+                    <button
+                      onClick={() => setSearchTerm("")}
+                      className={`absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center rounded-full transition-colors ${
+                        isDarkMode
+                          ? "text-neutral-600 hover:text-white hover:bg-white/10"
+                          : "text-neutral-400 hover:text-black hover:bg-black/5"
+                      }`}
+                    >
+                      <span className="text-lg leading-none">×</span>
+                    </button>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Active Filters */}
-          {searchTerm && (
-            <div className="flex items-center gap-2 animate-slide-in">
-              <span
-                className={`text-xs font-medium ${
+            {/* Results Count - Only show when there are results */}
+            {hasResults && (
+              <div
+                className={`mb-8 text-sm font-semibold ${
                   isDarkMode ? "text-neutral-600" : "text-neutral-500"
                 }`}
               >
-                Searching:
-              </span>
-              <span
-                className={`px-2 py-1 rounded text-xs font-medium ${
-                  isDarkMode
-                    ? "bg-white/5 text-neutral-400 border border-white/10"
-                    : "bg-black/5 text-neutral-700 border border-black/10"
-                }`}
-              >
-                {searchTerm}
-              </span>
-            </div>
-          )}
-        </div>
-
-        {/* Results Count */}
-        <div
-          className={`mb-8 text-sm font-semibold ${
-            isDarkMode ? "text-neutral-600" : "text-neutral-500"
-          }`}
-        >
-          {filteredIcons.length} {filteredIcons.length === 1 ? "icon" : "icons"}
-        </div>
+                {filteredIcons.length}{" "}
+                {filteredIcons.length === 1 ? "icon" : "icons"}
+              </div>
+            )}
+          </>
+        )}
 
         {/* Icons Grid */}
-        {filteredIcons.length > 0 ? (
+        {hasResults ? (
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2">
             {filteredIcons.map((icon, index) => (
               <button
@@ -244,7 +228,7 @@ const Icon = () => {
                 isDarkMode ? "text-neutral-600" : "text-neutral-500"
               }`}
             >
-              Try adjusting your search or filters
+              Try adjusting your search
             </p>
             <button
               onClick={() => {
@@ -256,7 +240,7 @@ const Icon = () => {
                   : "bg-black text-white hover:bg-black/90"
               }`}
             >
-              Clear All Filters
+              Clear Search
             </button>
           </div>
         )}
@@ -322,8 +306,12 @@ const Icon = () => {
           animation: check 0.5s ease-out;
         }
       `}</style>
+
+      
     </div>
   );
+
+  
 };
 
 export default Icon;
