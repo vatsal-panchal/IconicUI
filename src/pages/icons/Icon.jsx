@@ -163,7 +163,7 @@ const Icon = () => {
         )}
 
         {hasResults ? (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-11 gap-3 justify-items-center">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3 justify-items-center">
             {filteredIcons.map((icon, index) => (
               <button
                 key={icon.id}
@@ -176,7 +176,7 @@ const Icon = () => {
                   dangerouslySetInnerHTML={{ __html: icon.svg }}
                 />
 
-                <span className="relative text-[10px] text-center truncate w-full font-medium text-gray-500 transition-colors">
+                <span className="relative text-[8px] text-center truncate w-full font-medium text-gray-500 transition-colors">
                   {icon.name}
                 </span>
 
