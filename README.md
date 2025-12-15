@@ -1,7 +1,6 @@
-<img width="1919" height="848" alt="image" src="https://github.com/user-attachments/assets/cab9daa8-b35b-4618-a3bd-ed9b6a0142f9" />
+<img width="1910" height="826" alt="image" src="https://github.com/user-attachments/assets/dea23e82-099b-4b77-89a2-1fb7bade4629" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1b731688-9451-4f35-8bd0-21bac0fac372" />
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4550adc1-a4a8-48ca-8b1d-2f0107779a05" />
 
 # 🌊 IconWave
 
