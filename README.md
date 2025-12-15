@@ -3,11 +3,6 @@
 
 <img width="1910" height="826" alt="image" src="https://github.com/user-attachments/assets/dea23e82-099b-4b77-89a2-1fb7bade4629" /> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4550adc1-a4a8-48ca-8b1d-2f0107779a05" />
 
-Also Responsive
-<img width="421" height="790" alt="image" src="https://github.com/user-attachments/assets/3dc0c80c-3539-4a81-a062-86e12108eb12" />
-<img width="427" height="767" alt="image" src="https://github.com/user-attachments/assets/ddbe3dc8-9626-46c2-b4b0-caabc6fdf449" />
-
-
 
 #  IconWave
 
