@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
-      {/* Animated Stars Background */}
       <div className="absolute inset-0 overflow-hidden z-0">
         {[...Array(50)].map((_, i) => (
           <div
@@ -21,15 +20,12 @@ const Home = () => {
         ))}
       </div>
 
-      {/* Gradient Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black z-0" />
       <div className="absolute top-0 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow" />
       <div className="absolute bottom-0 right-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slower" />
 
-      {/* Navbar */}
       <Navbar />
 
-      {/* Main Content */}
       <main className="relative z-10">
         <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 sm:pt-24 md:pt-32 pb-12 sm:pb-20 text-center">
           {/* Badge */}
@@ -43,7 +39,6 @@ const Home = () => {
             </span>
           </div>
 
-          {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[4.5vw] font-semibold mb-4 sm:mb-5 leading-tight animate-slide-up px-4 ">
             <span className="inline-block bg-gradient-to-r from-white via-gray-300 to-gray-800 bg-clip-text text-transparent">
               Build Beautiful UI Faster

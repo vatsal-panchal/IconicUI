@@ -32,12 +32,10 @@ const Icon = () => {
 
   const hasResults = filteredIcons.length > 0;
 
-  // Floating background icons
   const backgroundIcons = iconsData.slice(0, 15);
 
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
-      {/* Enhanced Animated Stars Background */}
       <div className="absolute inset-0 overflow-hidden z-0">
         {[...Array(100)].map((_, i) => (
           <div
@@ -58,7 +56,6 @@ const Icon = () => {
         ))}
       </div>
 
-      {/* Pinterest-style Floating Background Icons */}
       <div className="absolute inset-0 overflow-hidden z-0 opacity-20">
         {backgroundIcons.map((icon, i) => (
           <div
@@ -79,7 +76,6 @@ const Icon = () => {
         ))}
       </div>
 
-      {/* Gradient Overlays with Mouse Follow */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black z-0" />
       <div
         className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow transition-all duration-1000 ease-out pointer-events-none"
@@ -94,12 +90,9 @@ const Icon = () => {
         style={{ animationDelay: "2s" }}
       />
 
-      {/* Navbar */}
       <Navbar />
 
-      {/* Main Content */}
       <div className="relative z-10 container mx-auto px-6 py-12 max-w-7xl">
-        {/* Header Section */}
         <div className="mb-16 text-center pt-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8 animate-fade-in">
             <span className="relative flex h-2 w-2">
@@ -124,7 +117,6 @@ const Icon = () => {
           </p>
         </div>
 
-        {/* Search Section */}
         {(hasResults || searchTerm) && (
           <div className="mb-12 flex flex-col items-center animate-slide-up-delay-3">
             <div className="relative w-full max-w-2xl group">
@@ -170,7 +162,6 @@ const Icon = () => {
           </div>
         )}
 
-        {/* Icons Grid */}
         {hasResults ? (
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-11 gap-3 justify-items-center">
             {filteredIcons.map((icon, index) => (
@@ -189,7 +180,6 @@ const Icon = () => {
                   {icon.name}
                 </span>
 
-                {/* Copied State */}
                 {copiedId === icon.id && (
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-600 rounded-2xl flex items-center justify-center animate-pop-in backdrop-blur-sm">
                     <svg
