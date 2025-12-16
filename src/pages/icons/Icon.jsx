@@ -334,7 +334,7 @@ const Icon = () => {
         )}
 
         {hasResults ? (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2 sm:gap-3 justify-items-center">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12 gap-2 sm:gap-3 justify-items-center">
             {filteredIcons.map((icon, index) => (
               <button
                 key={icon.id}
