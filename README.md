@@ -1,7 +1,8 @@
 
  Live Demo: https://iconic-ui-92vg.vercel.app/
 
-<img width="1910" height="826" alt="image" src="https://github.com/user-attachments/assets/dea23e82-099b-4b77-89a2-1fb7bade4629" /> 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/19cc522c-d984-424c-8b77-f1f614fc49ff" />
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5c8801bf-0b22-4ae9-9287-0aa7d2bdee0e" />
 
 
