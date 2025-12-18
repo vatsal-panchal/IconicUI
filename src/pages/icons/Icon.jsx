@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect,  } from "react";
 import { iconsData } from "../../data/icons";
 import "./icon.css";
 
@@ -11,7 +11,8 @@ const Icon = () => {
     const saved = localStorage.getItem("theme");
     return saved ? saved === "dark" : true;
   });
-  
+
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
