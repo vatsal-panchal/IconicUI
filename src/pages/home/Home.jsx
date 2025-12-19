@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
   return (
@@ -19,6 +20,8 @@ const Home = () => {
           />
         ))}
       </div>
+
+      <Navbar/>
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black z-0" />
       <div className="absolute top-0 left-1/4 w-64 h-64 sm:w-96 sm:h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse-slow" />
@@ -54,7 +57,7 @@ const Home = () => {
 
           <div className="flex items-center justify-center animate-slide-up-delay-3 px-4">
             <Link to="/Icons">
-              <button className="star-button">
+              <button className="star-button ">
                 Explore Icons
                 <div className="star-1">
                   <svg
