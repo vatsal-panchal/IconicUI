@@ -1,54 +1,42 @@
+# IconWave
 
- Live Demo: https://iconic-ui-92vg.vercel.app/
+A modern, open-source icon library for developers and designers.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/19cc522c-d984-424c-8b77-f1f614fc49ff" />
+Clean, consistent, and scalable icons —  
+no signup, no hassle, completely free.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5c8801bf-0b22-4ae9-9287-0aa7d2bdee0e" />
-
-
-
-#  IconWave
-
-**IconWave** is a modern, open-source icon library built for developers and designers who want **clean, consistent, and scalable icons** — without signup, without hassle, completely free.
-
- Live Demo: https://iconic-ui-92vg.vercel.app/
----
-
-## ✨ Features
-
-- **500+ Beautifully Designed Icons**
-- **Ready-to-use SVG icons**
-- **Pixel-perfect & scalable**
-- **Dark UI friendly**
-- **Fast icon search**
-- **No signup, no watermark, totally free**
-- **Perfect for web apps, dashboards & UI kits**
+**Live Demo:** https://iconic-ui-92vg.vercel.app/
 
 ---
 
-## 📸 Preview
-> Clean dark UI with smooth gradients and minimal design  
-> Browse icons, search instantly, and copy with ease.
+## Preview
+
+<img width="100%" alt="IconWave Preview 1" src="https://github.com/user-attachments/assets/19cc522c-d984-424c-8b77-f1f614fc49ff" />
+
+<img width="100%" alt="IconWave Preview 2" src="https://github.com/user-attachments/assets/5c8801bf-0b22-4ae9-9287-0aa7d2bdee0e" />
 
 ---
 
-## 🛠 Tech Stack
+## Features
+- 300+ beautifully designed icons
+- Ready-to-use SVG icons
+- Dark UI friendly
+- Fast and simple icon search
+---
 
-- **Frontend:** React / Vite  
-- **Styling:** Tailwind CSS  
-- **Icons Format:** SVG  
-- **Deployment:** vercel
+## Tech Stack
+- React
+- Tailwind CSS
+- SVG
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Clone the repository and run the project locally:
 
 ```bash
 git clone https://github.com/your-username/iconwave.git
 cd iconwave
-npm i
+npm install
 npm run dev
-
-
